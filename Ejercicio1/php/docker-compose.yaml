@@ -1,0 +1,13 @@
+version: "3"
+ 
+services:
+  php:
+    image: php:7-apache
+    volumes:
+      - ./src:/var/www/html
+    expose:
+      - 80
+    ports:
+      - 80:80
+    external_links: 
+      - mysql

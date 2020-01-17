@@ -1,0 +1,40 @@
+version: "2"
+services:
+  node:
+    image: "node:12"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./api:/home/node/app
+    ports:
+      - 3000:3000
+    expose:
+      - "3000"
+    command: "npm start"
+    links: 
+      - elasticsearch
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.5.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms750m -Xmx750m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - esnet
+volumes:
+  esdata1:
+    driver: local
+networks:
+  esnet:
+    driver: bridge
