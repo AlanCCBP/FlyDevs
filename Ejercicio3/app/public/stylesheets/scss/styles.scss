@@ -1,0 +1,170 @@
+@import "./scss/fontawesome.scss";
+
+@mixin rounded-rectangle {
+    border-radius: 25px;
+    width: 100px;
+    height: 50px;
+    margin-right: 1.5em;
+}
+
+@mixin rounded-rectangle-small {
+    border-radius: 25px;
+    width: 55px;
+    height: 12px;
+    margin-right: 0.85em;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    margin-top: 2em;
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+.pink {
+    @include rounded-rectangle;
+    background-color: #ff6460;
+}
+
+.light-blue {
+    @include rounded-rectangle;
+    background-color: #00a3fb;
+}
+
+.white {
+    @include rounded-rectangle;
+    background-color: #ffffff;
+    border: 0.5px #d6d6d6 solid;
+}
+
+.grey {
+    @include rounded-rectangle;
+    background-color: #3c5678;
+}
+
+.orange {
+    @include rounded-rectangle-small;
+    background-color: #ff7150;
+}
+
+.yellow {
+    @include rounded-rectangle-small;
+    background-color: #ffe94d;
+}
+
+.green {
+    @include rounded-rectangle-small;
+    background-color: #00b677;
+}
+
+.blue {
+    @include rounded-rectangle-small;
+    background-color: #0052b2;
+}
+
+.violet {
+    @include rounded-rectangle-small;
+    background-color: #955eba;
+}
+
+.fucsia {
+    @include rounded-rectangle-small;
+    background-color: #f95286;
+}
+
+.light-pink {
+    @include rounded-rectangle-small;
+    background-color: #ff7d94;
+}
+
+#button-add-to-cart {
+    background-color: #1e98f4;
+    border-radius: 25px;
+    color: #ffffff;
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.subtitles {
+    padding-top: 0.5em;
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+#bold-sample {
+    color: #00a3fb;
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+#light-sample {
+    color: #00a3fb;
+    font-size: 64px;
+    font-weight: lighter;
+}
+
+#bold-sample-desc {
+    color: #d6d6d6;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#light-sample-desc {
+    color: #d6d6d6;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+#description-title {
+    color: #3c5678;
+    font-weight: bold;
+    margin-left: 0.9em;
+}
+
+#description-text {
+    color: #889197;
+    font-size: 14px;
+    text-align: justify;
+}
+
+i {
+    font-size: 36px;
+    color: #3c5678;
+    margin-right: 0.8em;
+}
+
+#primary-colors-row {
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+#additional-colors-row {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#samples-and-description {
+    margin: 1em 1em 1em 0;
+    padding: 1em 1em 0 0;
+}
+
+#cart-box {
+    padding-top: 1em;
+}
+
+.colors-box {
+    padding-top: 0.75em;
+}
+
+.tiny-rounded-rectangle {
+    border-radius: 25px;
+    width: 40px;
+    height: 5px;
+    background-color: #ff6460;   
+}

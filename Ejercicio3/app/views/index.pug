@@ -1,0 +1,77 @@
+extends layout
+
+block content
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Essmak
+  body
+    .container
+      .row
+        .col-md-8.offset-md-2
+          .row.border-bottom
+            p Essmak
+          .row#samples-and-description
+            .col-md-6
+              .row
+                .col-md-6.span
+                  .row
+                    h6.subtitles Headings
+                  .row
+                    h1#bold-sample Aa
+                  .row
+                    div.pink.tiny-rounded-rectangle
+                  .row
+                    h3#bold-sample-desc Baloo
+                .col-md-6
+                  .row
+                    h6.subtitles Text
+                  .row
+                    h1#light-sample Aa
+                  .row
+                    div.pink.tiny-rounded-rectangle
+                  .row
+                    h3#light-sample-desc Open Sans
+            .col-md-6.border-left
+              .row
+                .row
+                  .col-md-10.offset-md-1
+                    h5#description-title Description
+                .row
+                  .col-md-10.offset-md-1
+                    p#description-text Don't keep going round in circles looking for lost items, put a label on it! Our round name labels are a popular and stylish solution to keep tracking of all your kid's belongings, from school supplies to sports equipment and more.
+          .row.border-top#primary-colors-row
+            .col-md-4
+              .row
+                h4.subtitles Primary Colors
+            .col-md-8
+              .row
+                div.pink
+                div.light-blue
+                div.white
+                div.grey
+          .row#additional-colors-row
+            .col-md-4
+              .row
+                h4.subtitles Additional Colors
+            .col-md-8
+              .row.colors-box
+                div.orange
+                div.yellow
+                div.green
+                div.blue
+                div.violet
+                div.fucsia
+                div.light-pink
+          .row.border-top#cart-box
+            .col-md-4
+              button.btn.btn-sm(type='button')#button-add-to-cart Add to cart
+            .col-md-8
+              i.fas.fa-tags
+              i.fas.fa-luggage-cart
+              i.fas.fa-holly-berry
+              i.fas.fa-address-book
+              i.fas.fa-home
+              i.fas.fa-birthday-cake
+              i.fas.fa-comments
